@@ -5,7 +5,7 @@ Required environment variables:
 * DESTINATION_BUCKET: S3 bucket name which will contain the result log file with all SQS queues names.
 
 Required configuration:
-* This script use boto3 SDK for AWS.
+* This script is using boto3 SDK for AWS.
 * Please follow https://boto3.amazonaws.com/v1/documentation/api/latest/guide/credentials.html#configuring-credentials to configure the client.
 
 Optional Configuration:
