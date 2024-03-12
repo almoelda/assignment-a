@@ -1,0 +1,15 @@
+name: scheduled-run
+on:
+  schedule:
+    - cron: "0 0 * * *"
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    container:
+      image: almogldbh/assignment-task-a:latest
+      env:
+        AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY }}
+        AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_KEY }}
+        DESTINATION_BUCKET: "data-blabla"
+    steps:
+    - run: "python3 /app/a.py"
