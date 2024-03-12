@@ -16,6 +16,7 @@ Flow:
 * Listing all SQS queues for a single regions.
 * Analyzing the access policy for each queue. if an external AWS principal found, the script can patch the policy and remove this principals.
 * Logs all queues which had unauthorized AWS principals to file which is uploaded to S3 bucket (need to be defined by environment variable)
+* scheduled-run Github workflow is configured to run on a daily basis, runs this against a AWS account.
 
 
 Code & Image scanning:
