@@ -3,6 +3,7 @@ Python script which handles unauothrized AWS principals on all SQS queues for a 
 
 Required environment variables:
 * DESTINATION_BUCKET: S3 bucket name which will contain the result log file with all SQS queues names.
+  Can be modified by editing the assignment-a/.github/workflows/scheduled-run.yml environment variable configuration for DESTINATION_BUCKET.
 
 Required configuration:
 * This script is using boto3 SDK for AWS.
