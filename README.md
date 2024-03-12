@@ -20,5 +20,5 @@ Flow:
 
 
 Code & Image scanning:
-* We can scan the code on every push to main branch by using CodeQL analysis by Github and other 3rd party tools.
+* We can scan the code on every push to main branch by using CodeQL analysis by Github and other 3rd party tools using Github workflow.
 * We can scan the docker image by using ECR scanning https://docs.aws.amazon.com/AmazonECR/latest/userguide/image-scanning.html, Github action https://github.com/marketplace/actions/container-scan or any other 3rd party tool.
